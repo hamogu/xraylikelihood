@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\documentclass[12pt,onecolumn]{article}
+\documentclass[fleqn,12pt,onecolumn]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{natbib}
+\include{journals}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Expertise and Resources Not Anonymized} % Journal information
+%\Archive{Additional note} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Getting more out of archival X-ray spectra: New spectral fitting methods}
+\Archive{}
+
+\Authors{}
+%\affiliation{*\textbf{Corresponding author}: hgunther@mit.edu} % Corresponding author
+
+\Keywords{Astrophysical Databases, Interstellar Medium and Star Formation} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+
+\Abstract{}
+
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+%\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+
+\section{List of team members}
+\begin{description}
+    \item[Dr.\ Hans Moritz G\"unther (PI)] MIT Kavli Institute for Astrophysics and Space Research: The PI leads and organizes the project, he will be responsible for all algorithms and code development and implementation. He will prepare online and in-person tutorials, perform the scientific analysis for HD~163296 and write any publications.
+    \item[Dr.\ David P.\ Huenemoerder (Co-I)] MIT Kavli Institute for Astrophysics and Space Research: The Co-I will provide advice and guidance and test software releases. He will also provide expertise in the analysis of high-resolution X-ray spectra.
+\end{description}
+
+
+\section{Scientific and technical expertise}
+The PI Dr.\ Hans Moritz G\"unther is an expert in X-ray data reduction. He has worked with XMM-Newton data for 15 years, analyzing data from young stars with a particular emphasis on the $f/i$ ratio of the He-like triples.
+He has also contributed to the development of the Astropy package, where he learned modern practices of software engineering, including testing, continuous integration, and international open-source collaboration. He has served in several leadership and management roles for the Astropy project. As part of his work for the Chandra X-ray Center (CXC) he is also familiar with the calibration of X-ray detectors and he is one of the major contributors to the development of the Sherpa fitting package. While Sherpa is a well-documented open source project that anyone could use in the manner described in this proposal, this previous experience will make the proposed work more efficient.
+
+Co-I Dr.\ David P.\ Huenemoerder has been with the CXC since before Chandra's launch and has developed, specified, and tested most of Chandra's grating data extraction algorithms. He has also been instrumental in the development of the ISIS spectral fitting software. Together that makes him one of the world's leading experts on the methods and techniques used in the analysis of high-resolution X-ray spectra.
+
+
+\section{Contributions}
+All development and implementation will be done by the funded PI; see work plan in the annonymized section of this proposal for details. The unfunded Co-I will provide advice and guidance and test software releases (estimated at about 2 weeks/year), but will not be responsible for any deliverables.
+
+
+\section{Facilities and Equipment}
+Office space, literature access etc. are provided by the MIT Kavli Institute for Astrophysics and Space Research. The PI has a laptop computer that will be used for this project, but the budget includes funds for a new laptop in case the currently available computer turns out to be insufficient for the work.
+
+\section{Table of Work Effort}
+\begin{table}[htb]\small
+    \centering
+    \caption{Summary of Work Effort (fractional work years)}  \label{tbl:workeffort}
+    \begin{tabular}{ccclc}\\\hline%\hline
+      %
+      \multicolumn{1}{c}{Position}&
+      \multicolumn{1}{c}{Name}&
+      \multicolumn{1}{c}{funded}&
+      \multicolumn{1}{c}{Year 1}&
+      \multicolumn{1}{c}{Year 2}\\\hline
+      %
+      PI& Hans Moritz G\"unther & yes &
+      0.33&    0.33\\
+      %
+      Co-I-1& David P. Huenemoerder & no &
+      0.04 & 0.04\\
+    \end{tabular}
+  \end{table}
+
+\section{Biographical Sketches/CVs}
+\paragraph{Dr.\ H.\ Moritz G\"unther} obtained his PhD in physics/astronomy from the
+University of Hamburg, Germany in 2009. He was a postdoctoral
+associate at the Harvard-Smithsonian Center for Astrophysics for 5
+years and joined the MIT Kavli Institute in 2015. His PhD thesis about
+accretion and outflows in classical T~Tauri stars is based mostly on
+the analysis of RGS spectra. His research focuses on accreting young
+stars observed in the X-ray and UV range. Since most of these sources
+are comparatively faint, he has acquired significant experience in the
+extraction and analysis of grating spectroscopy with low signal and
+significant backgrounds --- which motivated him to propose the fitting method to be developed in this proposal. Dr.\ G\"unther has used the SAS software (the
+XMM-Newton data analysis software) regularly since 2005.
+
+At MIT, Dr. G\"unther is responsible for the Chandra ray-trace code
+MARX and for ray-trace simulations of future mission proposals. In
+this role, he needs to know about different optical designs, grating
+technologies and detector effects in X-ray observatories.
+
+Dr.\ G\"unther is one of the regular contributors of the open source
+project Astropy and one of the lead developers of the X-ray fitting software Sherpa. He is used to software development in a collaborative
+environment and applying best practices such as version control,
+continuous integration, and highly informative user documentation.
+
+Some recent publications relevant to this proposal are:
+\bibsep -0.25mm
+\renewcommand{\bibsection}{\relax}
+\begin{thebibliography}{1}
+{%\small
+\input{hmg_biblio}
+}
+\end{thebibliography}
+
+\paragraph{Dr.\ David P.\ Huenemoerder} (Ph.D. Astronomy, 1982,
+University of Wisconsin-Madison, B.S. Physics, 1977 Bucknell
+University) joined the MIT Kavli Institute (nee the Center
+for Space Research) in 1992 as a member of the Chandra X-ray Center data
+analysis group, for which he is responsible for Chandra grating
+processing and analysis specifications, calibration database files,
+and some advanced modeling software.  He also manages the overall
+activities of the MIT/CXC group, comprised of about 8 scientists.  He
+has overseen the the development of the Chandra grating data catalog and
+archive ({\em ``TGCat''}).
+
+Dr.\ Huenemoerder's CXC service work has provided experience in
+managing development of software from specifications, writing software
+and file specifications, adherence to standard formats, development of
+new data formats, rigorous software testing, and in producing
+technical and end-user documentation.
+
+Dr.\ Huenemoerder's research is on the winds of massive
+stars, and X-ray emission from young stars (low and high mass).  Some
+of his recent publications relevant to this proposal are:
+
+
+
+\section{Specific resources}
+No specific resources are required for this project.
+
+\section{Letters of commitment}
+None.
+
+
+\section{Current and Pending Support}
+%Statements of Current and Pending Support for the PI and
+%Co-Is spending >10\% of their time in any given year;
+
+%------------------------------------------------
+%\phantomsection
+%\section*{Acknowledgments} % The \section*{} command stops section numbering
+
+%\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
+
+%So long and thanks for all the fish.
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+%\phantomsection
+%\bibliographystyle{prop}
+%\setlength\bibsep{0pt}
+%\bibliography{references}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
